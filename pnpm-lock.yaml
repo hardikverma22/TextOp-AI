@@ -8,6 +8,9 @@ dependencies:
   '@instructor-ai/instructor':
     specifier: ^0.0.7
     version: 0.0.7(openai@4.29.2)(zod@3.22.4)
+  '@vercel/analytics':
+    specifier: ^1.2.2
+    version: 1.2.2(next@14.1.4)(react@18.2.0)
   framer-motion:
     specifier: ^11.0.18
     version: 11.0.18(react-dom@18.2.0)(react@18.2.0)
@@ -275,6 +278,22 @@ packages:
   /@types/scheduler@0.16.8:
     resolution: {integrity: sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==}
     dev: true
+
+  /@vercel/analytics@1.2.2(next@14.1.4)(react@18.2.0):
+    resolution: {integrity: sha512-X0rctVWkQV1e5Y300ehVNqpOfSOufo7ieA5PIdna8yX/U7Vjz0GFsGf4qvAhxV02uQ2CVt7GYcrFfddXXK2Y4A==}
+    peerDependencies:
+      next: '>= 13'
+      react: ^18 || ^19
+    peerDependenciesMeta:
+      next:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      next: 14.1.4(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      server-only: 0.0.1
+    dev: false
 
   /abort-controller@3.0.0:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
@@ -1101,6 +1120,10 @@ packages:
     dependencies:
       ramda: 0.29.1
       zod: 3.22.4
+    dev: false
+
+  /server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
     dev: false
 
   /shebang-command@2.0.0:
